@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>civiqSync | Autonomous Infrastructure Intelligence</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="dynamic-parallax-container">
+        <img src="drone.png" alt="Autonomous Drone" class="parallax-layer active" id="bg-drone">
+        <img src="diagram.png" alt="Monitoring Diagram" class="parallax-layer" id="bg-diagram">
+        <img src="rover.png" alt="Ground Patrol Rover" class="parallax-layer" id="bg-rover">
+    </div>
+    <div class="glow-bg"></div>
+    <div class="grid-bg"></div>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <div class="logo-icon-wrapper">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                    </svg>
+                </div>
+                civiqSync
+            </div>
+            <ul class="nav-links">
+                <li><a href="#problem">Problem</a></li>
+                <li><a href="#howitworks">Platform</a></li>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#business">Pricing</a></li>
+            </ul>
+            <a href="#cta" class="btn btn-primary">Deploy System</a>
+        </div>
+    </nav>
+
+    <!-- 1. HERO SECTION -->
+    <header class="hero" id="hero">
+        <div class="container hero-container text-center">
+            <div class="hero-content fade-in-up" style="margin: 0 auto; max-width: 800px;">
+                <div class="tech-badge">
+                    <span class="badge-dot"></span>
+                    <span class="badge-text">v3.0 Infrastructure Intelligence Matrix</span>
+                </div>
+                <h1 class="hero-title">Predict the catastrophe.<br><span class="text-gradient">Before it cracks.</span>
+                </h1>
+                <p class="hero-description" style="margin: 0 auto 2.5rem; text-align: center;">Rapidly expanding Indian
+                    metropolises are collapsing under reactive maintenance. civiqSync deploys an autonomous AI network
+                    of drones, robots, and IoT wearables to map, predict, and prevent structural and utility failures
+                    before they happen.</p>
+                <div class="hero-actions" style="justify-content: center;">
+                    <a href="#howitworks" class="btn btn-primary btn-large">Explore The Machine Setup</a>
+                    <a href="#dashboard" class="btn btn-secondary btn-large">View Live Platform Demo</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. PROBLEM SECTION -->
+    <section id="problem" class="section border-top">
+        <div class="container">
+            <div class="section-grid">
+                <div class="section-text fade-in-left" style="--delay: 0.1s">
+                    <div class="mono-label">01 // THE CRISIS</div>
+                    <h3 class="section-title">Reactive maintenance is bankrupting cities.</h3>
+                    <p class="section-body">Modern Indian cities are built on aging matrices. When sudden monsoon
+                        pressure hits Chennai, or unregulated deep-soil hydration strikes Mumbai, traditional management
+                        discovers the damage hours after it destroys a street, pipeline, or bridge. Waiting for human
+                        crisis reports costs lives and depletes municipal resources exponentially faster than proactive
+                        action.</p>
+                    <div class="tech-quote">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path
+                                d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" />
+                            <line x1="12" y1="9" x2="12" y2="13" />
+                            <line x1="12" y1="17" x2="12.01" y2="17" />
+                        </svg>
+                        <p>In 2025 across major Indian cities, reactionary utility and infrastructure damage response
+                            costs exceeded ₹25,000 Crores annually.</p>
+                    </div>
+                </div>
+                <div class="section-visual fade-in-right" style="--delay: 0.3s">
+                    <div class="data-card tilt-glass">
+                        <div class="data-header">SYSTEMIC FINANCIAL DRAIN</div>
+                        <div class="stat-group">
+                            <div class="stat-item">
+                                <div class="stat-header">
+                                    <span class="stat-name">Reactive Model Expenses</span>
+                                    <span class="stat-value text-red">Critical Budget Drain</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress red" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-header">
+                                    <span class="stat-name">civiqSync AI Savings</span>
+                                    <span class="stat-value text-green">₹<span class="counter"
+                                            data-target="86">0</span>% Saved</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress green" style="width: 86%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. SOLUTION OVERVIEW -->
+    <section id="solution" class="section border-top">
+        <div class="container text-center">
+            <div class="section-header fade-in-up" style="--delay: 0.05s">
+                <div class="mono-label">02 // PARADIGM SHIFT</div>
+                <h3 class="section-title">The nervous system for your city.</h3>
+                <p class="section-subtitle"
+                    style="font-size: 1.1rem; line-height: 1.8; max-width: 800px; margin: 0 auto;">Like the human body
+                    routing pain to the brain instantly to prevent deeper lacerations, civiqSync weaves a continuous
+                    neurological map of the urban environment. Unlike fragmented legacy SCADA systems and sluggish
+                    municipal hotlines, our unified AI mesh autonomously tracks and mitigates distress signals across
+                    thousands of miles of concrete in true real-time.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. HOW IT WORKS (3-LAYER SYSTEM) -->
+    <section id="howitworks" class="section border-top">
+        <div class="container">
+            <div class="section-header text-center fade-in-up">
+                <div class="mono-label">03 // ACTIVE INTELLIGENCE</div>
+                <h3 class="section-title">The Three Layer Vanguard</h3>
+            </div>
+
+            <div class="hardware-grid">
+                <div class="hardware-card fade-in-up hover-glow" style="--delay: 0.1s">
+                    <div class="card-image-wrapper">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                            <rect x="3" y="11" width="18" height="10" rx="2" />
+                            <circle cx="7" cy="15" r="2" />
+                            <circle cx="17" cy="15" r="2" />
+                            <path d="M7 11V7a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v4" />
+                        </svg>
+                    </div>
+                    <div class="card-content">
+                        <div class="layer-tag">LAYER_01</div>
+                        <h4>Ground AI Rovers</h4>
+                        <p>Navigating roads nightly. Equipped with 360-LiDAR, GPR (Ground Penetrating Radar), and
+                            hypersensitive gas detectors specifically searching for subterranean pipe leaks and
+                            early-stage structural sinkhole pockets beneath asphalt.</p>
+                    </div>
+                </div>
+
+                <div class="hardware-card fade-in-up hover-glow" style="--delay: 0.2s">
+                    <div class="card-image-wrapper">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                            <path d="M12 2v20" />
+                            <path d="M2 12h20" />
+                            <circle cx="12" cy="12" r="3" />
+                            <circle cx="4" cy="4" r="2" />
+                            <circle cx="20" cy="4" r="2" />
+                            <circle cx="4" cy="20" r="2" />
+                            <circle cx="20" cy="20" r="2" />
+                        </svg>
+                    </div>
+                    <div class="card-content">
+                        <div class="layer-tag">LAYER_02</div>
+                        <h4>UAV Aerial Fleet</h4>
+                        <p>Fully autonomous Drone Swarms performing localized sweep patrols over structural blindspots.
+                            Utilizing YOLOv8 Computer Vision layers to identify stress fractures in bridges, illegal
+                            construction, flood-prone blocks, and fire hotspots.</p>
+                    </div>
+                </div>
+
+                <div class="hardware-card fade-in-up hover-glow" style="--delay: 0.3s">
+                    <div class="card-image-wrapper">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                            <rect x="5" y="2" width="14" height="20" rx="4" />
+                            <path d="M12 18h.01" />
+                            <path d="M9 2v2" />
+                            <path d="M15 2v2" />
+                            <path d="M9 20v2" />
+                            <path d="M15 20v2" />
+                        </svg>
+                    </div>
+                    <div class="card-content">
+                        <div class="layer-tag">LAYER_03</div>
+                        <h4>Citizen Mesh Nodes</h4>
+                        <p>Optional low-power IoT wearables passively collecting and broadcasting hyper-local AQI,
+                            thermal disparities, and ground vibration metrics. Turning every citizen into a silent
+                            sensor creating an impossible-to-replicate data scale advantage.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. PRODUCT STACK -->
+    <section id="stack" class="section border-top">
+        <div class="container">
+            <div class="section-grid">
+                <div class="section-text fade-in-left">
+                    <div class="mono-label">04 // END-TO-END VERTICAL AI</div>
+                    <h3 class="section-title">The Hardware + SaaS Stack.</h3>
+                    <p class="section-body" style="margin-bottom: 1.5rem;">civiqSync handles physical sensing, data
+                        transmission, and computational orchestration vertically.</p>
+                    <ul
+                        style="list-style: none; display: flex; flex-direction: column; gap: 1rem; color: var(--text-muted);">
+                        <li><strong style="color: var(--text-main);">HARDWARE:</strong> Bespoke modular UAVs, LiDAR
+                            Rovers, and low-cost BLE 5.2 Mesh tokens.</li>
+                        <li><strong style="color: var(--text-main);">SOFTWARE:</strong> Cloud-native web dashboard for
+                            Operations Hub, and mobile triage tracking for on-the-ground repair teams.</li>
+                        <li><strong style="color: var(--text-main);">NETWORK:</strong> AWS Kinesis streaming layers
+                            funneled directly into proprietary Transformer-based anomaly detection models mapping raw
+                            telemetry to action queues.</li>
+                    </ul>
+                </div>
+                <div class="section-visual fade-in-right">
+                    <div class="features-grid" style="grid-template-columns: 1fr;">
+                        <div class="feature-card hover-glow" style="padding: 1.5rem 2rem;">
+                            <h4>0% Data Latency</h4>
+                            <p>Edge-compute clusters process camera streams directly on the drone chassis, dispatching
+                                only critical meta-flags via 5G core to the server to prevent API bottlenecking.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. USE CASES -->
+    <section id="usecases" class="section border-top">
+        <div class="container text-center">
+            <div class="section-header fade-in-up">
+                <div class="mono-label">05 // LIVE SITUATIONS</div>
+                <h3 class="section-title">Five Core Deployments</h3>
+            </div>
+
+            <div class="features-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+                <!-- Case 1 -->
+                <div class="feature-card fade-in-up hover-glow" style="--delay: 0.1s">
+                    <h4 style="color: var(--accent);">Monsoon Sinkholes</h4>
+                    <p><strong>Problem:</strong> Underground pipes erode local soil.<br><strong>Detection:</strong>
+                        Rover GPR logs density drop.<br><strong>Outcome:</strong> Area sealed and piped repaired 6 days
+                        before collapse.</p>
+                </div>
+                <!-- Case 2 -->
+                <div class="feature-card fade-in-up hover-glow" style="--delay: 0.2s">
+                    <h4 style="color: var(--accent);">Bridge Fractures</h4>
+                    <p><strong>Problem:</strong> Commuter bridge stress buildup.<br><strong>Detection:</strong> UAV
+                        visual sweeps log micro-cracks over 3 months.<br><strong>Outcome:</strong> Preventative beam
+                        reinforcing executed, preventing disaster.</p>
+                </div>
+                <!-- Case 3 -->
+                <div class="feature-card fade-in-up hover-glow" style="--delay: 0.3s">
+                    <h4 style="color: var(--accent);">Pipeline Gas Leaks</h4>
+                    <p><strong>Problem:</strong> Unknown methane emissions.<br><strong>Detection:</strong> IoT Wearables
+                        trigger sudden local AQI warnings.<br><strong>Outcome:</strong> Drones deployed within 3 mins;
+                        leak isolated successfully.</p>
+                </div>
+                <!-- Case 4 -->
+                <div class="feature-card fade-in-up hover-glow" style="--delay: 0.4s">
+                    <h4 style="color: var(--accent);">Grid Overheating</h4>
+                    <p><strong>Problem:</strong> Transformers prone to fire.<br><strong>Detection:</strong> Aerial
+                        thermal mapping spots +10°C anomaly.<br><strong>Outcome:</strong> Load rebalanced automatically;
+                        hardware saved.</p>
+                </div>
+                <!-- Case 5 -->
+                <div class="feature-card fade-in-up hover-glow" style="--delay: 0.5s">
+                    <h4 style="color: var(--accent);">Flood Routing</h4>
+                    <p><strong>Problem:</strong> Unpredicted terrain pooling.<br><strong>Detection:</strong> Rovers map
+                        real-time water elevation.<br><strong>Outcome:</strong> Live rerouting of emergency vehicles via
+                        Mobile App.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. DASHBOARD / PLATFORM -->
+    <section id="dashboard" class="section border-top">
+        <div class="container">
+            <div class="section-grid">
+                <div class="section-text fade-in-left">
+                    <div class="mono-label">06 // THE MISSION PROTOCOL</div>
+                    <h3 class="section-title">Absolute Command UI.</h3>
+                    <p class="section-body">The civiqSync Operations Matrix brings unprecedented clarity. Officials use
+                        an interactive isometric 3D map that aggregates millions of data points into a single intuitive
+                        feed. Featuring Predictive Heatmaps, auto-generated PDF reports, and smart one-click repair
+                        dispatches via Webhook to legacy municipal CRM systems.</p>
+                </div>
+                <div class="section-visual fade-in-right">
+                    <div class="glass-panel text-left"
+                        style="padding: 2rem; background: rgba(5, 5, 10, 0.8); border: 1px solid var(--border-hover); border-radius: var(--radius-lg); position: relative; overflow: hidden; box-shadow: var(--shadow-hover);">
+                        <svg viewBox="0 0 400 200" style="width: 100%; height: auto; display: block;">
+                            <path d="M0 50h400 M0 100h400 M0 150h400 M50 0v200 M150 0v200 M250 0v200 M350 0v200"
+                                stroke="rgba(255,255,255,0.03)" stroke-width="1" />
+                            <path class="animated-path" d="M0 160 Q 50 140 100 150 T 200 90 T 300 110 T 400 40"
+                                fill="none" stroke="var(--accent)" stroke-width="3" stroke-linecap="round" />
+                            <path d="M0 160 Q 50 140 100 150 T 200 90 T 300 110 T 400 40 L 400 200 L 0 200 Z"
+                                fill="url(#cyan-fade)" />
+                            <circle cx="100" cy="150" r="4" fill="var(--accent)" class="pulse-node"
+                                style="animation-duration: 2s;" />
+                            <circle cx="200" cy="90" r="4" fill="var(--accent)" class="pulse-node"
+                                style="animation-duration: 2.5s;" />
+                            <circle cx="300" cy="110" r="4" fill="var(--accent)" class="pulse-node"
+                                style="animation-duration: 1.5s;" />
+                            <circle cx="400" cy="40" r="5" fill="var(--accent-purple)" class="pulse-node" />
+                            <defs>
+                                <linearGradient id="cyan-fade" x1="0" y1="0" x2="0" y2="1">
+                                    <stop offset="0%" stop-color="var(--accent-glow)" />
+                                    <stop offset="100%" stop-color="rgba(0,0,0,0)" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <div
+                            style="display: flex; justify-content: space-between; align-items: flex-end; margin-top: 1.5rem;">
+                            <div>
+                                <h4 style="margin-bottom: 0.25rem;">LIVE NODE UPLINK</h4>
+                                <span class="mono-label" style="margin-bottom: 0;">ANOMALY DETECTED</span>
+                            </div>
+                            <h2 style="font-size: 2.5rem; color: var(--accent); margin-bottom: 0; line-height: 1;">
+                                +42.8%</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. BENEFITS / ROI -->
+    <section id="benefits" class="section border-top">
+        <div class="container text-center">
+            <div class="section-header fade-in-up">
+                <div class="mono-label">07 // THE IMPACT</div>
+                <h3 class="section-title">Measurable Returns</h3>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card fade-in-up hover-glow text-center">
+                    <h1 style="font-size: 3rem; color: #10b981; margin-bottom: 0.5rem;">400%</h1>
+                    <h4>Faster Response</h4>
+                    <p>Identified anomalies route directly to field workers instantly.</p>
+                </div>
+                <div class="feature-card fade-in-up hover-glow text-center">
+                    <h1 style="font-size: 3rem; color: var(--accent-purple); margin-bottom: 0.5rem;">42%</h1>
+                    <h4>Cost Savings</h4>
+                    <p>Avoiding catastrophic road and structural collapses saves billions.</p>
+                </div>
+                <div class="feature-card fade-in-up hover-glow text-center">
+                    <h1 style="font-size: 3rem; color: var(--accent); margin-bottom: 0.5rem;">∞</h1>
+                    <h4>Citizen Safety</h4>
+                    <p>By securing bridges and limiting gas/flooding damage safely.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. BUSINESS MODEL -->
+    <section id="business" class="section border-top">
+        <div class="container">
+            <div class="section-grid">
+                <div class="section-text fade-in-left">
+                    <div class="mono-label">08 // THE ECONOMICS</div>
+                    <h3 class="section-title">Flexible Robotics-as-a-Service</h3>
+                    <p class="section-body">Adopt the network without crippling upfront capex constraints. Target
+                        customers include Smart City Municipalities (e.g. BMC, GCC), private gated townships, and
+                        large-scale industrial megacorporations.</p>
+                </div>
+                <div class="section-visual fade-in-right">
+                    <div class="feature-card tilt-glass">
+                        <h4
+                            style="border-bottom: 1px solid var(--border-color); padding-bottom: 1rem; margin-bottom: 1rem;">
+                            Pricing Approach</h4>
+                        <ul
+                            style="list-style: none; display: flex; flex-direction: column; gap: 0.8rem; color: var(--text-muted);">
+                            <li><strong style="color: var(--text-main);">Zone Subscription:</strong> Flat $25,000/mo per
+                                mapped Square Kilometer (Hardware included).</li>
+                            <li><strong style="color: var(--text-main);">Enterprise SaaS:</strong> Licensing per
+                                dashboard seat for city officials.</li>
+                            <li><strong style="color: var(--text-main);">Consulting APIs:</strong> Private access to
+                                predictive weather & distress models.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. TRACTION / VALIDATION -->
+    <section id="traction" class="section border-top">
+        <div class="container text-center">
+            <div class="section-header fade-in-up">
+                <div class="mono-label">09 // MARKET PROOF</div>
+                <h3 class="section-title">Validating The Fleet.</h3>
+                <p class="section-subtitle">We are currently operating via extensive private pilot tests.</p>
+            </div>
+            <div class="glass-panel fade-in-up"
+                style="max-width: 900px; margin: 0 auto; padding: 0; display: flex; text-align: left; background: rgba(5,5,10,0.8); border: 1px solid var(--border-color); overflow: hidden; border-radius: var(--radius-lg);">
+                <div style="flex: 1.2; padding: 3rem;">
+                    <h4 style="color: var(--accent);">Prototype Stage Alpha</h4>
+                    <p style="margin-top: 1rem; color: var(--text-dark);">Operating experimental drone sweeps and
+                        autonomous rovers mapping a 10sq/km private industrial park layout outside Chennai. We
+                        successfully identified 4 subsurface water leaks, saving an estimated ₹2.3M in asphalt
+                        restructuring prior to sinkhole collapse.</p>
+                    <div style="display: flex; gap: 2rem; margin-top: 2rem;">
+                        <div>
+                            <p class="mono-label" style="margin-bottom: 0.25rem;">COVERAGE</p>
+                            <h3 style="color: #fff; font-size: 1.75rem;">10km²</h3>
+                        </div>
+                        <div>
+                            <p class="mono-label" style="margin-bottom: 0.25rem;">SAVINGS</p>
+                            <h3 style="color: #10b981; font-size: 1.75rem;">₹2.3M</h3>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    style="flex: 0.8; background: #02040a; position: relative; border-left: 1px solid var(--border-color);">
+                    <svg width="100%" height="100%" viewBox="0 0 200 200"
+                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                        preserveAspectRatio="xMidYMid slice">
+                        <circle cx="100" cy="100" r="30" stroke="var(--accent-glow)" fill="none" stroke-width="1">
+                            <animate attributeName="r" values="30;80" dur="3s" repeatCount="indefinite" />
+                            <animate attributeName="opacity" values="1;0" dur="3s" repeatCount="indefinite" />
+                        </circle>
+                        <circle cx="100" cy="100" r="8" fill="var(--accent)" class="pulse-node" />
+                        <path d="M40 0L40 200 M80 0L80 200 M120 0L120 200 M160 0L160 200"
+                            stroke="rgba(255,255,255,0.03)" />
+                        <path d="M0 40L200 40 M0 80L200 80 M0 120L200 120 M0 160L200 160"
+                            stroke="rgba(255,255,255,0.03)" />
+                        <circle cx="60" cy="50" r="3" fill="var(--accent-purple)">
+                            <animate attributeName="opacity" values="0.2;1;0.2" dur="2s" repeatCount="indefinite" />
+                        </circle>
+                        <circle cx="140" cy="150" r="4" fill="#ef4444">
+                            <animate attributeName="opacity" values="0;1;0" dur="1s" repeatCount="indefinite" />
+                        </circle>
+                        <circle cx="160" cy="70" r="3" fill="var(--accent)" />
+                        <circle cx="40" cy="130" r="3" fill="var(--accent)" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 11. ROADMAP -->
+    <section id="roadmap" class="section border-top">
+        <div class="container">
+            <div class="section-header text-center fade-in-up">
+                <div class="mono-label">10 // FORWARD VISION</div>
+                <h3 class="section-title">The Three Year Expansion</h3>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card fade-in-up hover-glow" style="border-top: 4px solid var(--accent);">
+                    <h4>Year 1: Alpha Pilots</h4>
+                    <p>Securing 3 paid municipal beta tests across tier-2 cities. Expanding predictive AI pipelines
+                        specifically for heavy monsoon water channeling paths.</p>
+                </div>
+                <div class="feature-card fade-in-up hover-glow" style="border-top: 4px solid var(--accent-purple);">
+                    <h4>Year 2: Hardware Scale</h4>
+                    <p>Mass manufacturing Citizen Mesh Wearable v1. Deploying 50 ground rovers to establish India's
+                        first fully 24/7 tracked Smart Transport corridor.</p>
+                </div>
+                <div class="feature-card fade-in-up hover-glow" style="border-top: 4px solid #10b981;">
+                    <h4>Year 3: Global SaaS</h4>
+                    <p>Packaging the API. Allowing external autonomous vehicle platforms to license the civiqSync mesh
+                        density network for safer global self-driving navigation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 12. TRUST, PRIVACY, AND SAFETY -->
+    <section id="trust" class="section border-top">
+        <div class="container">
+            <div class="section-grid">
+                <div class="section-text fade-in-left">
+                    <div class="mono-label">11 // SECURITY FIRST</div>
+                    <h3 class="section-title">Cryptographic Integrity.</h3>
+                    <p class="section-body">Governing city-wide data is not taken lightly. The architecture prioritizes
+                        anonymized encryption at the absolute lowest root node level.</p>
+                </div>
+                <div class="section-visual fade-in-right">
+                    <!-- Secure Lock Visual -->
+                    <div class="glass-panel text-center hover-glow"
+                        style="padding: 4rem 2rem; background: rgba(5, 5, 10, 0.7); border: 1px solid rgba(157, 78, 221, 0.3);">
+                        <svg viewBox="0 0 100 100"
+                            style="width: 140px; height: 140px; filter: drop-shadow(0 0 25px rgba(157, 78, 221, 0.3)); margin-bottom: 1.5rem;">
+                            <!-- Shield Outline -->
+                            <path d="M50 10 L85 25 L85 55 C85 75 65 90 50 95 C35 90 15 75 15 55 L15 25 Z" fill="none"
+                                stroke="var(--accent-purple)" stroke-width="4" />
+                            <path d="M50 10 L85 25 L85 55 C85 75 65 90 50 95 C35 90 15 75 15 55 L15 25 Z"
+                                fill="rgba(157, 78, 221, 0.1)" />
+                            <!-- Inner Checkmark -->
+                            <path d="M35 50 L45 60 L70 35" fill="none" stroke="var(--accent)" stroke-width="5"
+                                stroke-linecap="round" stroke-linejoin="round" class="animated-path" />
+                            <!-- Particles -->
+                            <circle cx="30" cy="30" r="2" fill="var(--accent)">
+                                <animate attributeName="cy" values="90;20" dur="3s" repeatCount="indefinite" />
+                            </circle>
+                            <circle cx="70" cy="70" r="2" fill="var(--accent)">
+                                <animate attributeName="cy" values="90;20" dur="2s" repeatCount="indefinite" />
+                            </circle>
+                        </svg>
+                        <h4 style="color: var(--text-main); font-size: 1.5rem; margin-bottom: 0.5rem;">AES-256 Mesh
+                            Encryption</h4>
+                        <p class="mono-label" style="color: var(--accent); margin-bottom: 0;">NETWORK STATUS: SECURE</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 13. CALL TO ACTION -->
+    <section id="cta" class="section border-top">
+        <div class="container text-center">
+            <div class="glass-panel fade-in-up hover-glow"
+                style="padding: 5rem 2rem; background: rgba(6, 182, 212, 0.1); border-color: rgba(6, 182, 212, 0.3);">
+                <h2 style="font-size: 3.5rem; margin-bottom: 1.5rem; color: #fff;">Shift from defense to offense.</h2>
+                <p
+                    style="font-size: 1.25rem; color: var(--text-dark); margin-bottom: 3rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                    Don't wait for your infrastructure to break before you notice it exists. Join the most powerful
+                    urban intelligence network available.</p>
+                <div style="display: flex; gap: 1rem; justify-content: center;">
+                    <a href="#" class="btn btn-primary btn-large">Schedule Technical Demo</a>
+                    <a href="#" class="btn btn-secondary btn-large">View API Docs</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer border-top" style="background: rgba(2, 6, 23, 0.9);">
+        <!-- Existing Footer Structure -->
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="logo-icon-wrapper">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                            </svg>
+                        </div>
+                        civiqSync
+                    </div>
+                    <p class="footer-description">City-wide autonomous monitoring network protecting future
+                        infrastructure.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="link-column">
+                        <h5>Infrastructure</h5>
+                        <a href="#">Ground Nodes</a>
+                        <a href="#">Aerial Fleet</a>
+                        <a href="#">Citizen Mesh</a>
+                    </div>
+                    <div class="link-column">
+                        <h5>Software</h5>
+                        <a href="#">Cloud Platform</a>
+                        <a href="#">Dashboard Ops</a>
+                        <a href="#">API Docs</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="mono-text">© 2026 CIVIQSYNC. ALL SYSTEMS NOMINAL.</p>
+                <div class="legal-links">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
